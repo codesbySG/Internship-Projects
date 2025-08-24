@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ProGadget • Smart Tech, Smarter You</title>
+  <meta name="description" content="ProGadget – your one‑stop hub for the latest gadgets, curated deals, and handy productivity tools." />
+  <meta name="theme-color" content="#00c853" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- =============== Header =============== -->
+  <header>
+    <div class="container nav">
+      <a class="logo" href="#" aria-label="ProGadget Home">
+        <span class="logo-mark" aria-hidden="true">🔌</span>
+        <span>ProGadget</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#">Home</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#history">History</a>
+        <a href="#contact">Contact</a>
+        <button class="btn btn-secondary" id="toolsBtn" aria-expanded="false" aria-controls="sidebar">Wishlist ▸</button>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- =============== Hero =============== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="kicker">ProGadget • trusted by tech lovers</span>
+          <h1>Discover the latest gadgets & manage your workflow like a pro.</h1>
+          <p>Curated deals, quick insights, and built‑in price‑drop alerts—so you buy at the right time.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#leaderboard">See Highlights</a>
+            <button class="btn btn-secondary" id="openTools2">Open Wishlist</button>
+          </div>
+        </div>
+
+        <!-- Right “device” with tech image + animated badges -->
+        <div class="device" aria-hidden="true">
+          <div class="screen">
+            <img
+              class="hero-img reveal"
+              src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1600&auto=format&fit=crop"
+              alt="Laptop keyboard and workspace lighting up a modern gadget setup"
+              loading="eager"
+            />
+            <div class="status reveal" id="heroBadges">
+              <span class="pill pill-live" style="--i:0">Live: 27 hot offers</span>
+              <span class="pill" style="--i:1">Under ₹999 picks</span>
+              <span class="pill" style="--i:2">Student specials</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============== Feature Cards (sample products) =============== -->
+    <section class="section">
+      <div class="container grid" id="leaderboard">
+        <article class="card reveal">
+          <div class="img-frame">
+            <img
+              class="remote-img"
+              alt="Smartphone on a clean desk"
+              data-srcs='[
+                "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1400&auto=format&fit=crop",
+                "https://source.unsplash.com/featured/800x600?smartphone,gadget&sig=10"
+              ]'
+              loading="lazy"
+            >
+          </div>
+          <h3>Xenon X1 Smartphone</h3>
+          <p>128GB • 8GB RAM • AMOLED 120Hz</p>
+          <div class="price-row">
+            <span class="price" data-currency="₹" data-price="29999">₹29,999</span>
+            <button
+              class="btn btn-primary add-wishlist"
+              data-id="prod_xenonx1"
+              data-name="Xenon X1 Smartphone"
+              data-price="29999"
+              data-img="smartphone"
+            >Add to Wishlist</button>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="img-frame">
+            <img
+              class="remote-img"
+              alt="Premium headphones and tech accessories"
+              data-srcs='[
+                "https://source.unsplash.com/featured/800x600?headphones,accessories,tech&sig=1",
+                "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1400&auto=format&fit=crop"
+              ]'
+              loading="lazy"
+            >
+          </div>
+          <h3>Aurora ANC Headphones</h3>
+          <p>Hybrid ANC • 40h battery • USB‑C</p>
+          <div class="price-row">
+            <span class="price" data-currency="₹" data-price="5999">₹5,999</span>
+            <button
+              class="btn btn-primary add-wishlist"
+              data-id="prod_aurora_anc"
+              data-name="Aurora ANC Headphones"
+              data-price="5999"
+              data-img="headphones"
+            >Add to Wishlist</button>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="img-frame">
+            <img
+              class="remote-img"
+              alt="Sleek ultrabook on desk"
+              data-srcs='[
+                "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1400&auto=format&fit=crop",
+                "https://source.unsplash.com/featured/800x600?laptop,ultrabook&sig=9"
+              ]'
+              loading="lazy"
+            >
+          </div>
+          <h3>NovaBook Air 14</h3>
+          <p>i5 • 16GB RAM • 512GB SSD • 1.2kg</p>
+          <div class="price-row">
+            <span class="price" data-currency="₹" data-price="57990">₹57,990</span>
+            <button
+              class="btn btn-primary add-wishlist"
+              data-id="prod_novabook_air14"
+              data-name="NovaBook Air 14"
+              data-price="57990"
+              data-img="laptop"
+            >Add to Wishlist</button>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="img-frame">
+            <img
+              class="remote-img"
+              alt="Discount tag and shopping concept for offers"
+              data-srcs='[
+                "https://www.searchenginejournal.com/wp-content/uploads/2020/04/should-you-discount-your-seo-services-because-of-coronavirus-5e8c7fb2d5d72.png",
+                "https://source.unsplash.com/featured/800x600?sale,discount,deal&sig=4"
+              ]'
+              loading="lazy"
+            >
+          </div>
+          <h3>Weekend Offers</h3>
+          <p>Curated deals, verified sellers, limited time.</p>
+          <div class="price-row">
+            <span class="price muted">Prices vary</span>
+            <button class="btn btn-secondary" id="openTools3">Track Price Drops</button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- =============== Contact =============== -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="h2">Contact Us</h2>
+        <p class="helper">We usually respond within 24 hours.</p>
+        <form id="contactForm" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your full name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help?" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+          <div id="formMessage" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- =============== Footer =============== -->
+  <footer>
+    <div class="container">© 2025 ProGadget. All rights reserved. • Crafted with care.</div>
+  </footer>
+
+  <!-- =============== Sidebar: Smart Wishlist / Price Tracker =============== -->
+  <aside id="sidebar" class="sidebar" aria-hidden="true" aria-label="Smart Wishlist / Price Tracker">
+    <div class="sb-head">
+      <h3>Smart Wishlist</h3>
+      <div class="sb-actions">
+        <button class="btn btn-secondary" id="refreshPrices" title="Refresh prices">Refresh</button>
+        <button class="btn btn-secondary" id="closeSidebar" aria-label="Close tools">✖</button>
+      </div>
+    </div>
+
+    <div class="tool">
+      <!-- Add custom item -->
+      <div class="wishlist-add">
+        <input id="wlName" type="text" placeholder="Gadget name (e.g., Pixel Buds A)" />
+        <input id="wlPrice" type="number" placeholder="Current price (₹)" min="0" />
+        <input id="wlTarget" type="number" placeholder="Target price (₹)" min="0" />
+        <button class="btn btn-primary" id="addCustom">Add to Wishlist</button>
+      </div>
+
+      <!-- List -->
+      <ul id="wishlist" class="wishlist-list" aria-live="polite"></ul>
+
+      <!-- Footer -->
+     <div class="wishlist-footer">
+     <label class="helper" style="display:flex;align-items:center;gap:8px">
+     <input type="checkbox" id="fastMode">
+      Fast Mode (quicker checks)
+     </label>
+     <div style="display:flex;gap:8px;flex-wrap:wrap">
+     <button class="btn btn-secondary" id="enableNotifs">Enable Notifications</button>
+     <button class="btn btn-secondary" id="testAlert">Test Alert</button>
+     <button class="btn" id="clearWishlist" style="background:#2a1111;color:#ffd8d8;border:1px solid rgba(255,255,255,.06)">Clear All</button>
+     </div>
+    </div>
+
+    </div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
